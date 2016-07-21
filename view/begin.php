@@ -17,6 +17,9 @@
             $(document).ready(
                     function () {
                         $("table.tableSorter").tableSort();
+                        $('.datepicker').datepicker({
+                            dateFormat: "dd.mm.yy"
+                        });
                         $("#tagsDozent").autocomplete({
                             source: "ajaxDozent.php", minLength: 2
                         });
@@ -38,7 +41,7 @@
         <div id="container">
 
             <header>
-                <a><img src="images/daumen.png" alt="" /></a>
+                <a href="http://localhost/Dozentenbewertung/index.php"><img src="images/daumen.png" alt="" /></a>
                 <h1>Dozentenbewertung</h1>
             </header>
 
@@ -52,32 +55,28 @@
 
             <aside>
                 <h2>Suche</h2>
-                <h3>Nach Dozenten (Nachnamen)</h3>
+                <p style="color: #FF0000">Nach Dozenten (Nachnamen)</p>
                 <form action="index.php" method="POST">
                     <input id="tagsDozent" name="suchstringDozent" size="25" class="ui-widget"/>
-                    <input type="submit" value="Absenden" />
+                    <input style="background: #000000; color: #FF0000" type="submit" value="Absenden" />
                     <input type="hidden" name="sentDozent" value="1" />
                 </form>
                 <br>
-                <br>
-                <br>
-                <h3>Nach Ort</h3>
+                <p style="color: #FF0000">Nach Ort</p>
                 <form action="index.php" method="POST">                  
                     <input id="tagsOrt" type="text" name="suchstringOrt" size="25" class="ui-widget"/>                           
-                    <input type="submit" value="Absenden" />
+                    <input style="background: #000000; color: #FF0000" type="submit" value="Absenden" />
                     <input type="hidden" name="sentOrt" value="1" />
                 </form>
                 <br>
-                <br>
-                <br>
-                <h3>Nach Kurs</h3>
+                <p style="color: #FF0000">Nach Kurs</p>
                 <form action="index.php" method="POST">                  
                     <input id="tagsKurs" type="text" name="suchstringKurs" size="25" class="ui-widget"/>                           
-                    <input type="submit" value="Absenden" />
+                    <input style="background: #000000; color: #FF0000" type="submit" value="Absenden" />
                     <input type="hidden" name="sentKurs" value="1" />
                 </form>
             </aside>
 
-            <section id="content">
+            <section id="content" style="margin-left: 200px; margin-right: 200px;">
 
                 <article>

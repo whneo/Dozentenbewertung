@@ -1,8 +1,8 @@
 <form action="index.php" method="POST">
-    <table border="0" cellspacing="5" cellpadding="5">
+    <table border="0" cellspacing="0" cellpadding="5">
         <thead>
             <tr>
-                <th colspan="2">Bitte tragen Sie hier alle Daten zur Bewertung ein</th>
+                <th style="background: #000000" colspan="2">Bitte tragen Sie hier alle Daten zur Bewertung ein</th>
             </tr>
         </thead>
         <tbody>
@@ -38,14 +38,18 @@
                 </td>
             </tr>
             <tr>
-                <td>In welchem Jahr fand der Kurs statt? (yyyy):</td>
-                <td><input type="text" name="jahr" value="" required=""/></td>
+                <td>Beginn des Kurses:</td>
+                <td><input class="datepicker" type="text" id="fromdate" name='kursBeginn' size='9' value="" required=""/></td>
+            </tr>
+            <tr>
+                <td>Ende des Kurses:</td>
+                <td><input class="datepicker" type="text" id="todate" name='kursEnde' size='9' value="" required=""/></td>
             </tr>
             <tr>
                 <td></td>
                 <td>
-                    <input type="submit" />
-                    <input type="reset" />
+                    <input style="background: #000000; color: #FF0000" type="submit" value="Absenden"/>
+                    <input style="background: #000000; color: #FF0000" type="reset" />
                     <input type="hidden" name="insertsent" value="1" />
                 </td>
             </tr>

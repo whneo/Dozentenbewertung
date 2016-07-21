@@ -12,7 +12,8 @@ class BewertungHTML {
             <th><a class=\"bold\" href=\"javascript:$('example1_table').sortTable({onCol: 4, keepRelationships: true})\">Kurs</a></th>
             <th><a class=\"bold\" href=\"javascript:$('example1_table').sortTable({onCol: 5, keepRelationships: true})\">Ort</a></th>
             <th><a class=\"bold\" href=\"javascript:$('example1_table').sortTable({onCol: 6, keepRelationships: true, sortType: 'numeric'})\">Note</a></th>
-            <th><a class=\"bold\" href=\"javascript:$('example1_table').sortTable({onCol: 7, keepRelationships: true, sortType: 'numeric'})\">Jahr</a></th>
+            <th><a class=\"bold\" href=\"javascript:$('example1_table').sortTable({onCol: 7, keepRelationships: true, sortType: 'numeric'})\">Kursbeginn</a></th>
+            <th><a class=\"bold\" href=\"javascript:$('example1_table').sortTable({onCol: 8, keepRelationships: true, sortType: 'numeric'})\">Kursende</a></th>
         </tr>
     </thead>
     <tbody>";
@@ -25,7 +26,8 @@ class BewertungHTML {
                 <td><center> {$bewertungen[$i]->getKurs()} </center></td>
                 <td><center> {$bewertungen[$i]->getEinsatzort()} </center></td>
                 <td><center> {$bewertungen[$i]->getNote()} </center></td>
-                <td><center> {$bewertungen[$i]->getJahr()} </center></td>
+                <td><center> {$bewertungen[$i]->getKursbeginn()} </center></td>
+                <td><center> {$bewertungen[$i]->getKursende()} </center></td>
             </tr>";
         }
         $html .= "</tbody>";

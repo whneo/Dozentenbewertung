@@ -10,7 +10,6 @@ $navigation = isset($_GET['navi']) ? $_GET['navi'] : '0';
 $view = 'home';
 switch ($navigation) {
     case "0":
-        echo "<h2>Willkommen bei Evaluate A Doz</h2>";
         break;
     case "1":
         echo "<h2>Bewertungen</h2>";
@@ -53,11 +52,12 @@ $dozentNachname = isset($_POST['dozentNachname']) ? $_POST['dozentNachname'] : '
 $kursThema = isset($_POST['kursThema']) ? $_POST['kursThema'] : '';
 $einsatzortStadt = isset($_POST['einsatzortStadt']) ? $_POST['einsatzortStadt'] : '';
 $note = isset($_POST['note']) ? $_POST['note'] : '';
-$jahr = isset($_POST['jahr']) ? $_POST['jahr'] : '';
+$kursBeginn = isset($_POST['kursBeginn']) ? $_POST['kursBeginn'] : '';
+$kursEnde = isset($_POST['kursEnde']) ? $_POST['kursEnde'] : '';
 
-if ($insertsent && $teilnehmerPseudonym && $dozentVorname && $dozentNachname && $kursThema && $einsatzortStadt && $jahr) {
+if ($insertsent && $teilnehmerPseudonym && $dozentVorname && $dozentNachname && $kursThema && $einsatzortStadt && $kursBeginn && $kursEnde) {
     echo '<h2>Bewertung eintragen</h2>';
-    Bewertung::insert(new Bewertung(new Teilnehmer($teilnehmerPseudonym), new Dozent($dozentVorname, $dozentNachname), new Kurs($kursThema), new Einsatzort($einsatzortStadt), $note, $jahr));
+    Bewertung::insert(new Bewertung(new Teilnehmer($teilnehmerPseudonym), new Dozent($dozentVorname, $dozentNachname), new Kurs($kursThema), new Einsatzort($einsatzortStadt), $note, $kursBeginn, $kursEnde));
     $view = 'bewertungenAnzeigen';
 }
 include './view/' . $view . '.php';
