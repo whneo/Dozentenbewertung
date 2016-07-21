@@ -1,5 +1,4 @@
 <?php
-
 class Einsatzort {
    
     private $id;

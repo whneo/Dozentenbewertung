@@ -20,12 +20,12 @@ include './class/Teilnehmer.php';
 //print_r($insert3);
 //echo '</pre>';
 
-$teilnehmer = new Teilnehmer('teilnehmer1');
-$kurs = new Kurs('kurs3');
-$einsatzort = new Einsatzort('einsatzort5');
-$dozent = new Dozent('vorname5', 'vorname5');
-$bewertung = new Bewertung($teilnehmer, $dozent, $kurs, $einsatzort, '5', '2005');
-Bewertung::insert($bewertung);
+//$teilnehmer = new Teilnehmer('teilnehmer1');
+//$kurs = new Kurs('kurs3');
+//$einsatzort = new Einsatzort('einsatzort5');
+//$dozent = new Dozent('vorname5', 'vorname5');
+//$bewertung = new Bewertung($teilnehmer, $dozent, $kurs, $einsatzort, '5', '2005');
+//Bewertung::insert($bewertung);
 
 //echo '<pre>';
 //print_r($bewertung);

@@ -37,5 +37,5 @@
             </tr>
         </tbody>
     </table>
-    <p style="margin-top:20px; color: #FF0000">Die mit * gekennzeichneten Felder müssen ausgefüllt werden.</p>
+    <p style="margin-top:15px; color: #FF0000">Die mit * gekennzeichneten Felder müssen ausgefüllt werden.</p>
 </form>

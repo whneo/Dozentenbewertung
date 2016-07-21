@@ -1,5 +1,4 @@
 <?php
-
 class BewertungHTML {
 
     public static function buildTableContent($bewertungen) {

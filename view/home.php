@@ -1,3 +1,3 @@
 <form>
-    <h2>Willkommen bei Evaluate A Doz</h2>
+    <h2>Willkommen bei Dozentenbewertung</h2>
 </form>

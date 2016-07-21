@@ -2,7 +2,7 @@
     <table border="0" cellspacing="0" cellpadding="5">
         <thead>
             <tr>
-                <th style="background: #000000" colspan="2">Bitte tragen Sie hier alle Daten zur Bewertung ein</th>
+                <th style="background: #000000" colspan="2">Bitte tragen Sie hier alle Daten zur Bewertung ihres Dozenten ein</th>
             </tr>
         </thead>
         <tbody>

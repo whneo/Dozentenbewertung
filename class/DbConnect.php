@@ -1,5 +1,4 @@
 <?php
-
 class DbConnect {
 
     private static $conn;

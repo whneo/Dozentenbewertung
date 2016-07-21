@@ -1,5 +1,4 @@
 <?php
-
 class Teilnehmer {
 
     private $id;

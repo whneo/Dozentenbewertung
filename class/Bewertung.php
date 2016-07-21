@@ -1,5 +1,4 @@
 <?php
-
 class Bewertung {
 
     private $id;
@@ -92,7 +91,7 @@ class Bewertung {
         for ($i = 0; $i < count($dozenten); $i++) {
             $dozent_id = $dozenten[$i]->getId();
 
-            $stmt = $db->prepare("SELECT * FROM bewertung WHERE dozent_id=?");
+            $stmt = $db->prepare("SELECT * FROM bewertung WHERE dozent_id=? ORDER BY kursbeginn, kursende");
             $stmt->bindValue(1, $dozent_id, PDO::PARAM_INT);
             $stmt->execute();
             $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -112,7 +111,7 @@ class Bewertung {
         for ($i = 0; $i < count($einsatzorte); $i++) {
             $einsatzort_id = $einsatzorte[$i]->getId();
 
-            $stmt = $db->prepare("SELECT * FROM bewertung WHERE einsatzort_id=?");
+            $stmt = $db->prepare("SELECT * FROM bewertung WHERE einsatzort_id=? ORDER BY kursbeginn, kursende");
             $stmt->bindValue(1, $einsatzort_id, PDO::PARAM_INT);
             $stmt->execute();
             $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -132,7 +131,7 @@ class Bewertung {
         for ($i = 0; $i < count($kurse); $i++) {
             $kurs_id = $kurse[$i]->getId();
 
-            $stmt = $db->prepare("SELECT * FROM bewertung WHERE kurs_id=?");
+            $stmt = $db->prepare("SELECT * FROM bewertung WHERE kurs_id=? ORDER BY kursbeginn, kursende");
             $stmt->bindValue(1, $kurs_id, PDO::PARAM_INT);
             $stmt->execute();
             $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
