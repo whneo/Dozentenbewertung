@@ -1,0 +1,146 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* render html5 elements as block 
+   rendert html5 elemente als block  */
+
+header, footer, section, aside, nav, article { display: block;}
+
+body {
+    background-color: #000000;
+    font-size: 0.95em;
+    font-family: Arial, SunSans-Regular, Sans-Serif;
+    /*color:#564b47;*/
+    color: #FF0000
+}
+pre, code {
+    font-size: 1.3em;
+}
+a {color: #FF0000;}
+a:visited {color:#FF0000;}
+a:hover {color: #F8F8FF;}
+a:active { color:#7FFF00;}
+
+href {color: #FF0000;}
+href:visited {color:#FF0000;}
+href:hover {color: #F8F8FF;}
+href:active { color:#7FFF00;}
+
+h1 {
+    font-size:3.5em;
+    font-weight: normal;
+    margin: 0 0 20px;
+    color: #F8F8FF;
+    text-shadow: 0.1em 0.1em 0.2em red;
+}
+
+h2 {
+    font-size:1.8em;
+    font-weight: normal;
+    margin: 0 0 20px;
+    color: #F8F8FF;
+    text-shadow: 0.1em 0.1em 0.2em red;
+}
+h3 {
+    font-size:1.17em;
+    font-weight: normal;
+    margin: 0 0 5px;
+    color: #F8F8FF;
+    text-shadow: 0.1em 0.1em 0.2em red;
+}
+
+img.download {vertical-align:middle;}
+
+/* ----------container zentriert das layout-------------- */
+#container {
+    max-width: 1200px;
+    min-width:960px;
+    margin:10px  auto;
+    background-color: #000000;
+}
+
+/* ----------header for logo-------------- */
+header {
+    padding:20px;
+    background:#000000 ;
+    border-color: #DB7093;
+    border: groove;
+    -moz-border-radius: 10px; /*Firefox*/
+    -webkit-border-radius: 10px; /*Safari,Chrome*/
+    -khtml-border-radius: 10px; /*Konqueror*/
+    border-radius: 10px; /*CSS3*/
+}
+
+header p{
+    text-transform:uppercase;
+    font-size:11px;
+
+}
+header img{ padding: 30px 870px 0;}
+
+/* ----------------- content--------------------- */
+section#content {
+    background-color: #000000;
+    margin: 0 250px;
+    min-height:600px;
+    padding:20px;
+    border-color: #DB7093;
+    border: groove;
+    -moz-border-radius: 10px; /*Firefox*/
+    -webkit-border-radius: 10px; /*Safari,Chrome*/
+    -khtml-border-radius: 10px; /*Konqueror*/
+    border-radius: 10px; /*CSS3*/
+}
+
+p, pre{
+    padding:  0 0 20px;
+    line-height:1.5em;
+    color: #FFDEAD;
+}
+
+/* -------------- navigavtion------------- */
+nav {
+    float: left;
+    width: 250px;
+    padding:20px;
+    color: #000000;
+    border-color: #DB7093;
+    border: groove;
+    -moz-border-radius: 10px; /*Firefox*/
+    -webkit-border-radius: 10px; /*Safari,Chrome*/
+    -khtml-border-radius: 10px; /*Konqueror*/
+    border-radius: 10px; /*CSS3*/
+    min-height: 600px;
+}
+/* -------------- side infos ------------- */
+aside{
+    float: right;
+    width: 250px;
+    padding:20px;
+    color: #000000;
+    border-color: #DB7093;
+    border: groove;
+    -moz-border-radius: 10px; /*Firefox*/
+    -webkit-border-radius: 10px; /*Safari,Chrome*/
+    -khtml-border-radius: 10px; /*Konqueror*/
+    border-radius: 10px; /*CSS3*/
+    min-height: 600px;
+}
+/* -----------footer--------------------------- */
+footer {
+    padding:20px;
+    clear: both;
+    border-top:5px solid #000000;
+    color:#000000;
+    border-color: #DB7093;
+    border: groove;
+    -moz-border-radius: 10px; /*Firefox*/
+    -webkit-border-radius: 10px; /*Safari,Chrome*/
+    -khtml-border-radius: 10px; /*Konqueror*/
+    border-radius: 10px; /*CSS3*/
+}
