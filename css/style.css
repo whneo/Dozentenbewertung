@@ -66,12 +66,6 @@ img.download {vertical-align:middle;}
 header {
     padding:20px;
     background:#000000 ;
-    border-color: #DB7093;
-    border: groove;
-    -moz-border-radius: 10px; /*Firefox*/
-    -webkit-border-radius: 10px; /*Safari,Chrome*/
-    -khtml-border-radius: 10px; /*Konqueror*/
-    border-radius: 10px; /*CSS3*/
 }
 
 header p{
@@ -79,7 +73,7 @@ header p{
     line-height:1.5em;
 
 }
-header img{ margin: 30px 870px 0;}
+header img{ margin: 0 380px 0;}
 
 /*-------------------zentrum----------------------*/
 #zentrum {
@@ -115,12 +109,6 @@ nav {
     width: 150px;
     padding:20px;
     color: #000000;
-/*    border-color: #DB7093;
-    border: groove;
-    -moz-border-radius: 10px; Firefox
-    -webkit-border-radius: 10px; Safari,Chrome
-    -khtml-border-radius: 10px; Konqueror
-    border-radius: 10px; CSS3*/
     min-height: 600px;
     margin-top: 0;
     margin-bottom: 0;
@@ -131,15 +119,6 @@ aside{
     width: 200px;
     padding:20px;
     color: #000000;
-/*    
-    border-color: #DB7093;
-    border: groove;
-    -moz-border-radius: 10px; Firefox
-    -webkit-border-radius: 10px; Safari,Chrome
-    -khtml-border-radius: 10px; Konqueror
-    border-radius: 10px; CSS3
-    min-height: 600px;
-    */
 }
 /* -----------footer--------------------------- */
 footer {
@@ -147,12 +126,6 @@ footer {
     clear: both;
     border-top:5px solid #000000;
     color:#000000;
-    border-color: #DB7093;
-    border: groove;
-    -moz-border-radius: 10px; /*Firefox*/
-    -webkit-border-radius: 10px; /*Safari,Chrome*/
-    -khtml-border-radius: 10px; /*Konqueror*/
-    border-radius: 10px; /*CSS3*/
 }
 /*----------------table--------------------------*/
 th {

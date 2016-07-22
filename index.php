@@ -1,4 +1,5 @@
 <?php
+
 include './config.php';
 spl_autoload_register(function($class) {
     include './class/' . $class . '.php';
@@ -55,10 +56,14 @@ $kursBeginn = isset($_POST['kursBeginn']) ? $_POST['kursBeginn'] : '';
 $kursEnde = isset($_POST['kursEnde']) ? $_POST['kursEnde'] : '';
 
 if ($insertsent && $teilnehmerPseudonym && $dozentVorname && $dozentNachname && $kursThema && $einsatzortStadt && $kursBeginn && $kursEnde) {
-    echo '<h2>Bewertung eintragen</h2>';
+    
+    if ($kursBeginn >= $kursEnde) {
+        $view = 'InsertFehler';
+    } else {
     Bewertung::insert(new Bewertung(new Teilnehmer($teilnehmerPseudonym), new Dozent($dozentVorname, $dozentNachname), new Kurs($kursThema), new Einsatzort($einsatzortStadt), $note, $kursBeginn, $kursEnde));
+    echo '<h2>Bewertungen</h2>';
     $view = 'bewertungenAnzeigen';
-}
+}}
 include './view/' . $view . '.php';
 include './view/end.php';
 ?>

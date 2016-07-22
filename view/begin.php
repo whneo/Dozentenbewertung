@@ -39,8 +39,16 @@
         <div id="container">
 
             <header>
-                <a href="http://localhost/Dozentenbewertung/index.php"><img src="images/daumen.png" alt="" /></a>
-                <h1>Dozentenbewertung</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><h1>Dozentenbewertung</h1></td>
+                            <td><a href="http://localhost/Dozentenbewertung/index.php"><img src="images/daumen.png" alt="" /></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+<!--                <a href="http://localhost/Dozentenbewertung/index.php"><img src="images/daumen.png" alt="" /></a>
+                <h1>Dozentenbewertung</h1>-->
                 <table>
                     <tbody>
                         <tr>
